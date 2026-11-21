@@ -1,0 +1,36 @@
+{
+  "name": "pirunchino",
+  "version": "1.0.0",
+  "description": "Turn audio you have the rights to use into cleanly named and tagged MP3s for offline, screen-free playback",
+  "keywords": [
+    "mp3",
+    "id3",
+    "ffmpeg",
+    "offline-music",
+    "music-tagging",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "agusgambina",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agusgambina/pirunchino.git"
+  },
+  "bugs": "https://github.com/agusgambina/pirunchino/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "pirunchino": "./pirunchino.ts"
+  },
+  "scripts": {
+    "start": "node pirunchino.ts",
+    "test": "node --test \"lib/*.test.ts\""
+  },
+  "files": [
+    "pirunchino.ts",
+    "lib/",
+    "!lib/*.test.ts"
+  ]
+}
